@@ -1,0 +1,126 @@
+/* Reset */
+body, h1, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Logo Bar */
+.logo-bar {
+  background: #000;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.main-logo {
+  height: 300px;
+  width: auto;
+}
+
+
+:root {
+  color-scheme: light;
+}
+
+
+/* Navbar */
+.navbar {
+  background: #111;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.menu li a {
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+
+.menu li a:hover {
+  color: #facc15;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background: linear-gradient(270deg, #ff7e5f, #feb47b, #86fde8);
+  background-size: 600% 600%;
+  animation: gradientBG 16s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 4px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  background: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 0;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #facc15;
+}
+
+/* Static Page Sections */
+.content-section {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: transparent;
+}
+
+.content-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 3px;
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Gradient animation */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.page-background {
+  min-height: 100vh;
+  background: linear-gradient(270deg, #ff7e5f, #feb47b, #86fde8);
+  background-size: 600% 600%;
+  animation: gradientBG 16s ease infinite;
+  display: flex;
+  flex-direction: column;
+}
